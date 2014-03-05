@@ -9,7 +9,7 @@
 'use strict';
 
 var htmlparser = require('htmlparser'),
-    config = require('../lib/configParser').getConfig();
+    config = require('../lib/config');
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('atomicize', 'The best Grunt plugin ever.', function() {
@@ -23,7 +23,6 @@ module.exports = function(grunt) {
       }
 
       var classes = dom[0].attribs.class.split(" ");
-
       classes.forEach(function (className) {
         var splitClass = className.split('-');
         if (splitClass.length > 1) {
@@ -65,7 +64,7 @@ module.exports = function(grunt) {
       var output = [];
 
       Object.keys(outputMap).forEach(function (className) {
-        output.push("\t." + className + "{");
+        output.push("\t." + className + " {");
         output.push("\t\t" + outputMap[className]);
         output.push("\t}");
       });
