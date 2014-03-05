@@ -2,4 +2,7 @@ body {
 	.m-10 {
 		margin: 10px;
 	}
+	.m-100pct {
+		margin: 100%;
+	}
 }
