@@ -1,7 +1,7 @@
 {
   "name": "grunt-atomicize",
   "description": "The best Grunt plugin ever.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jkap/grunt-atomicize",
   "author": {
     "name": "Josh Kaplan",
@@ -30,14 +30,15 @@
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt": "~0.4.2",
-    "htmlparser": "^1.7.7"
+    "grunt": "~0.4.2"
   },
   "peerDependencies": {
-    "grunt": "~0.4.2",
-    "htmlparser": "^1.7.7"
+    "grunt": "~0.4.2"
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "dependencies": {
+    "htmlparser": "^1.7.7"
+  }
 }
