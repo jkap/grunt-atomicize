@@ -77,10 +77,11 @@ module.exports = function (grunt) {
       var output = [];
 
       Object.keys(outputMap).forEach(function (className) {
-        output.push("\t." + className + " {");
-        output.push("\t\t" + outputMap[className]);
-        output.push("\t}");
+        var outputString = "\t." + className + " { " + outputMap[className] + " }";
+        output.push(outputString);
       });
+
+      output = output.sort();
 
       output.unshift("body {");
       output.push("}");

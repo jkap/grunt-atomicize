@@ -1,8 +1,5 @@
 body {
-	.m-10 {
-		margin: 10px;
-	}
-	.m-100pct {
-		margin: 100%;
-	}
+	.w-100pct { width: 100%; }
+	.w-200 { width: 200px; }
+	.w-960 { width: 960px; }
 }
